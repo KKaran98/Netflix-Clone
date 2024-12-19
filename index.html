@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-Home Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+      <a href="index.html"><img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="netflix logo" class="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html" target="_blank">Movies</a></li>
+            <li><a href="TVshows.html" target="_blank">TV Shows</a></li>
+            <li><a href="https://www.netflix.com/latest">Latest</a></li>
+            <li><a href="https://www.netflix.com/browse/my-list">My List</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+            <button class="search-button" onclick="toggleSearch()">
+                <i class="fa-solid fa-magnifying-glass" style="color: #fafafa;"></i>
+            </button>
+        </div>
+
+        <script>
+          function toggleSearch() {
+              var searchInput = document.getElementById("searchInput");
+              if (searchInput.classList.contains("visible")) {
+                  // If the input is already visible, perform the search
+                  var query = searchInput.value;
+                  if (query) {
+                      window.location.href = "" + encodeURIComponent(query);
+                  }
+              } else {
+                  // Otherwise, make the input field visible
+                  searchInput.classList.add("visible");
+                  searchInput.focus();
+              }
+          }
+        </script>
+      
+          <button><i class="fa-regular fa-bell" style="color: #fafafa;"></i></button>
+          <button class="profile">
+            <img src="netflix-profile.jpg" alt="user profile picture" class="profile-image">
+            <div class="dropdown-content">
+              <a href="https://www.netflix.com/account" target="_blank">Account</a>
+              <a href="Netflix.html" target="_blank">Logout</a>
+            </div>
+        </button>
+        </nav>  
+    </header>   
+    
+    <section>
+      <img src="full_image1.jpg" alt="hero-img">
+    </section>
+
+    <div class="movies-section">
+      <div class="box1 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/81740214?trackId=255824129&tctx=0%2C0%2Ce8233484-96e8-413e-aba5-8fc3b7011d1d-33099152%2Ce8233484-96e8-413e-aba5-8fc3b7011d1d-33099152%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81740214%2CVideo%3A81740214%2CminiDpPlayButton" ><div class="box-img" style="background-image: url('hii_nanna2.png');"></div></a>
+        </div>        
+      </div>
+  
+      <div class="box2 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/81704206?trackId=255824129&tctx=0%2C3%2C13a6a1d7-089d-4383-9d55-431bd47f5874-160122046%2C13a6a1d7-089d-4383-9d55-431bd47f5874-160122046%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81704206%2CVideo%3A81704206%2CminiDpPlayButton"><div class="box-img" style="background-image: url('Conjuring\ K.png');"></div></a>
+        </div>
+      </div>
+  
+      <div class="box3 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/81672746?trackId=255824129&tctx=0%2C0%2Ceeddc830-2475-4d94-8c75-252a05be8397-218448187%2Ceeddc830-2475-4d94-8c75-252a05be8397-218448187%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81672746%2CVideo%3A81672746%2CminiDpPlayButton"><div class="box-img" style="background-image: url('crew.png');"></div></a>
+        </div>
+      </div>
+  
+      <div class="box4 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/81698397?trackId=255824129&tctx=0%2C0%2C13a6a1d7-089d-4383-9d55-431bd47f5874-160502636%2C13a6a1d7-089d-4383-9d55-431bd47f5874-160502636%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81698397%2CVideo%3A81698397%2CminiDpPlayButton"><div class="box-img" style="background-image: url('fighter.png');"></div></a>
+        </div>
+      </div>
+      
+      <div class="box5 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/81177241?trackId=255824129&tctx=0%2C0%2Cf845ff6f-1964-49ae-9227-c2b5388fc76f-112195663%2Cf845ff6f-1964-49ae-9227-c2b5388fc76f-112195663%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81177241%2CVideo%3A81177241%2CminiDpPlayButton"><div class="box-img" style="background-image: url('grandson.png');"></div></a>
+        </div>        
+      </div>
+  
+      <div class="box6 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/81595555?trackId=255824129&tctx=0%2C0%2Cc3943f1c-617a-43bc-ae6d-21031f025435-218454235%2Cc3943f1c-617a-43bc-ae6d-21031f025435-218454235%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81595555%2CVideo%3A81595555%2CminiDpPlayButton"><div class="box-img" style="background-image: url('gumraah.png');"></div></a>
+        </div>        
+      </div>
+  
+      <div class="box7 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/81719491?trackId=255824129&tctx=0%2C0%2C4595de23-b181-4746-8308-ed366333bbd3-218724381%2C4595de23-b181-4746-8308-ed366333bbd3-218724381%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81719491%2CVideo%3A81719491%2CminiDpPlayButton"><div class="box-img" style="background-image: url('kushi.png');"></div></a>
+        </div>        
+      </div>
+  
+      <div class="box8 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/81382254?trackId=255824129&tctx=0%2C0%2C93560e52-9eb8-4b5c-a8b0-9dda0e4611d4-199518291%2C93560e52-9eb8-4b5c-a8b0-9dda0e4611d4-199518291%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81382254%2CVideo%3A81382254%2CminiDpPlayButton"><div class="box-img" style="background-image: url('tu\ jhooti\ me\ makar.png');"></div></a>
+        </div>        
+      </div>
+
+      <div class="box9 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/81728124?trackId=255824129&tctx=0%2C2%2C13a6a1d7-089d-4383-9d55-431bd47f5874-160767227%2C13a6a1d7-089d-4383-9d55-431bd47f5874-160767227%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81728124%2CVideo%3A81728124%2CminiDpPlayButton"><div class="box-img" style="background-image: url('jawaan.png');"></div></a>
+        </div>        
+      </div>
+
+      <div class="box10 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/70219526?trackId=255824129&tctx=0%2C0%2C13a6a1d7-089d-4383-9d55-431bd47f5874-160809677%2C13a6a1d7-089d-4383-9d55-431bd47f5874-160809677%7C2%2Cunknown%2C%2C%2CtitlesResults%2C70219526%2CVideo%3A70219526%2CminiDpPlayButton"><div class="box-img" style="background-image: url('student\ of\ the\ year.png');"></div></a>
+        </div>        
+      </div>
+
+      <div class="box11 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/81346056?trackId=255824129&tctx=0%2C0%2Cd8532bc5-eee6-4410-af02-873f0ddd5500-219056582%2Cd8532bc5-eee6-4410-af02-873f0ddd5500-219056582%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81346056%2CVideo%3A81346056%2CminiDpPlayButton"><div class="box-img" style="background-image: url('telugu.png');"></div></a>
+        </div>        
+      </div>
+
+      <div class="box12 box">
+        <div class="box-content">
+          <a href="https://www.netflix.com/watch/80158042?trackId=255824129&tctx=0%2C1%2C0efd88b2-2481-4152-8199-81ceb0b3aea4-123194105%2C0efd88b2-2481-4152-8199-81ceb0b3aea4-123194105%7C2%2Cunknown%2C%2C%2CtitlesResults%2C80158042%2CVideo%3A80158042%2CminiDpPlayButton"><div class="box-img" style="background-image: url('dear\ zindagi.png');"></div></a>
+        </div>        
+      </div>
+  
+    </div>
+
+    <footer>
+      <div class="foot-panel1">
+        <b>NETFLIX</b>
+      </div>
+  
+      <div class="foot-panel2">
+        <ul>
+          <p><b>Website Links</b></p>
+          <a>Cookie Settings</a>
+          <a>Hair Color Virtual Try On</a>  
+          <a>Sitemap</a>
+          <a>Terms And Conditions</a>
+          <a>Privacy Policy</a>
+          <a>Posting Guidelines</a>
+        </ul>
+        <ul>
+          <p><b>Customer Service</b></p>
+          <a href="https://help.netflix.com/en/contactus" target="_blank" >Contact Us</a>
+        </ul>
+        <ul>
+          <p><b>Follow Netflix India</b></p>
+          <p><a href="https://www.facebook.com/NetflixIN/" target="_blank" ><i class="fa-brands fa-facebook" style="color: #1b61da;"></i></a>
+          <a href="https://www.instagram.com/Netflix_IN/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCZSNzBgFub_WWil6TOTYwAg" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://x.com/netflixindia" target="_blank" ><i class="fa-brands fa-twitter"></i></a></p>
+        </ul>
+      </div>
+  
+      <div class="foot-panel4">
+        <div class="pages">
+          <a>©2018 NETFLIX LLC</a>
+        </div>
+        <div class="copyright">
+          This site is intended for IN consumers. Cookies and related technology are used for advertising. To learn more, visit AdChoices and our privacy policy
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
